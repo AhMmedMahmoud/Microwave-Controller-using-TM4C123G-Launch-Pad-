@@ -5,8 +5,22 @@
 #include "Macros.h"
 
 /*  @Connentions
-	 		    VSS    VDD     V0 												  RS      RW     E      D0    D1    D2    D3    D4    D5    D6    D7    VBUS    GND
-					GND    VBUS    V_POTENTIONMETER_10KOHM      PA6     GND    PA7    PB0   PB1   PB2   PB3   PB4   PB5   PB6   PB7   A       K
+	 	    VSS  ->  GND
+		    VDD  ->  VBUS
+	       	    VO   ->  V_POTENTIONMETER_10KOHM
+	   	    RS   ->   PA6
+	       	    RW   ->   GND
+		    E    ->   PA7
+		    D0   ->   PB0
+		    D1   ->   PB1
+		    D2   ->   PB2
+		    D3   ->   PB3
+		    D4   ->   PB4
+		    D5   ->   PB5
+		    D6   ->   PB6
+	   	    D7   ->   PB7
+		    A    ->   VBUS
+	            K    ->   GND
 */
 
 
@@ -57,7 +71,7 @@ void LCD_writeLetter(char clearBeforeWrite,char str,char clearAfterWrite,char ho
 	delay_milli(50);
 	
 	GPIO_PORTA_DATA_R = (GPIO_PORTA_DATA_R & 0x3F) + 0x40; 		//  PA7 PA6 = 01 -->  E=0,RS=1        ACTIVATE DATA MODE
-	GPIO_PORTB_DATA_R =str;   															  //  make B0-B7 carry the character
+	GPIO_PORTB_DATA_R =str;   				  //  make B0-B7 carry the character
 	GPIO_PORTA_DATA_R |= 0x80;                                //  PA7 PA6 = 11 -->  E=1,RS=1        upping E 
 	delay_micro(1);																						//  waiting
 	GPIO_PORTA_DATA_R = GPIO_PORTA_DATA_R & 0x3F;             //  PA7 PA6 = 00 -->  E=0,RS=0        droping E to pass values on D0-D7 inside LCD
@@ -79,7 +93,7 @@ void LCD_writeString (char clearBeforeWrite,char *str,char clearAfterWrite)    /
 	for(i=0;str[i]!=0;i++)    // Send each char of string till the NULL
 	{
 		GPIO_PORTA_DATA_R = (GPIO_PORTA_DATA_R & 0x3F) + 0x40; 		//  PA7 PA6 = 01 -->  E=0,RS=1        ACTIVATE DATA MODE
-		GPIO_PORTB_DATA_R =str[i];   															//  make B0-B7 carry the character
+		GPIO_PORTB_DATA_R =str[i];   					//  make B0-B7 carry the character
 		GPIO_PORTA_DATA_R |= 0x80;                                //  PA7 PA6 = 11 -->  E=1,RS=1        upping E 
 		delay_micro(1);																						//  waiting
 		GPIO_PORTA_DATA_R = GPIO_PORTA_DATA_R & 0x3F;             //  PA7 PA6 = 00 -->  E=0,RS=0        droping E to pass values on D0-D7 inside LCD
