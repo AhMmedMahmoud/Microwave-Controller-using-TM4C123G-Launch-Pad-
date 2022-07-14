@@ -1,0 +1,38 @@
+/* Buzzer Functions */
+void Buzzer_init();
+void Buzzer(char state);
+
+/* busy delay Functions  */
+void delay_milli(int n);                // make delay n mile second
+void delay_micro(int n);                // make delay n micro second
+
+/* KeyPad Functions */
+void keypad_init(void);
+char keypad_getkey(void);
+
+/* LCDS Functions */
+void LCD_init(void);             /* initialization of LCD */
+void LCD_Cmd(unsigned char command);       /* select command of LCD */
+void LCD_writeString (char clearBeforeWrite,char *str,char clearAfterWrite);        /* send String to LCD */
+void LCD_writeLetter(char clearBeforeWrite,char str,char clearAfterWrite,char homePosition);       /* clear then write letter on LCD */
+
+/* MicroWave Functions */
+void setup();
+void selectMode(char *read);
+void getWeight(char* food,int* mins,int* secs);
+void getTime(int* mins,int* secs);
+void startCooking(int mins,int secs);
+void finishCooking();
+
+/* Leds Functions */
+void RGB_init(void);
+void led(int mask , char state);
+
+/* Switches Functions */
+void Switches_init();
+char getSwitch(int n);
+void GPIOF_Handler(void);
+void GPIOA_Handler(void);
+
+/* SysTick Timer Functions */
+void SysTicK_countSeconds(int n);
