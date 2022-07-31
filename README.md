@@ -31,7 +31,7 @@ This project simulates the embedded controller in a microwave oven.
 - 10K potentiometer
 - Jumpers    
 ## Processes Diagram
-![image](https://user-images.githubusercontent.com/104006521/179329412-bcf5c435-224b-4c6f-95d0-b1afcff0adb5.png)
+![image](https://user-images.githubusercontent.com/104006521/182040678-89dc50d8-6313-47e6-8c23-d0f9eada21fa.png)
 # Connections
 - Buzzer
     - Positive terminal -> A2
