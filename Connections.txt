@@ -1,0 +1,32 @@
+Connections
+Buzzer
+	Positive terminal -> A2
+	Positive terminal -> GND
+Keypad
+	[R1 - R4] -> [PE1 - PE4]
+	[C1 - C4] -> [PC4 - PC7]
+LCD
+	VSS -> GND
+	VDD -> VBUS
+	VO -> V_POTENTIONMETER_10KOHM
+	RS -> PA6
+	RW -> GND
+	E -> PA7
+	D0 -> PB0
+	D1 -> PB1
+	D2 -> PB2
+	D3 -> PB3
+	D4 -> PB4
+	D5 -> PB5
+	D6 -> PB6
+	D7 -> PB7
+	A -> VBUS
+	K -> GND
+Leds
+	red -> F1
+	blue -> F2
+	green -> F3
+Switches
+	SW1 (Pause button) -> F4
+	SW2 (Start button) -> F0
+	SW3 (Door switch) -> A3
