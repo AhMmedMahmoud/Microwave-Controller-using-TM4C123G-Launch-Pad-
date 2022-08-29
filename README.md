@@ -25,7 +25,7 @@ simulate the embedded controller in a microwave oven.
 ## Processes Diagram
 ![image](https://user-images.githubusercontent.com/104006521/182040678-89dc50d8-6313-47e6-8c23-d0f9eada21fa.png)
 ## Video 
-[here](https://drive.google.com/file/d/165fxDsdFtR-j1i4xtWscL7fSBZ0QnHCk/view?usp=sharing).
+[here](https://drive.google.com/file/d/165fxDsdFtR-j1i4xtWscL7fSBZ0QnHCk/view?usp=sharing)
 ## Zip file 
 [here](https://drive.google.com/file/d/1bfjGtWWhnZwjm8Fo_iLXPLFL-NPzA8Mk/view?usp=sharing)
 
