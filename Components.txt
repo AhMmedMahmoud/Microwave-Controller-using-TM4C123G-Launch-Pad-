@@ -1,0 +1,8 @@
+components
+	TM4C123G Launch Pad
+	16*2 LCD
+	4*4 Keypad
+	Buzzer 5v
+	External Push Button
+	10K potentiometer
+	Jumpers
