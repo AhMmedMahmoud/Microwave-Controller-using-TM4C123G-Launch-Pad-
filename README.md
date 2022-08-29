@@ -21,49 +21,9 @@ This project simulates the embedded controller in a microwave oven.
 - When the microwave is running, the array of LEDs should be on. 
 - When it is stopped (no choice is entered), the array of LEDs should go off. 
 - When the microwave is paused, the array of LEDs should blink (wait till the cooking is resumed or stopped).
-- When the microwave completes its function (timer has counted down to zero), the array of LEDs should flash 3 times then the buzzer should be on for 3s.
-## components
-- TM4C123G Launch Pad 	     
-- 16*2 LCD                                
-- 4*4 Keypad
-- Buzzer 5v
-- External Push Button
-- 10K potentiometer
-- Jumpers    
+- When the microwave completes its function (timer has counted down to zero), the array of LEDs should flash 3 times then the buzzer should be on for 3s.    
 ## Processes Diagram
 ![image](https://user-images.githubusercontent.com/104006521/182040678-89dc50d8-6313-47e6-8c23-d0f9eada21fa.png)
-# Connections
-- Buzzer
-    - Positive terminal -> A2
-    - Positive terminal -> GND
-- Keypad
-    - [R1 - R4] -> [PE1 - PE4] 
-    - [C1 - C4] -> [PC4 - PC7]
-- LCD
-    - VSS   ->  GND
-    - VDD   ->  VBUS
-    - VO    ->  V_POTENTIONMETER_10KOHM
-    - RS    ->   PA6
-    - RW    ->   GND
-    - E     ->   PA7
-    - D0    ->   PB0
-    - D1    ->   PB1
-    - D2    ->   PB2
-    - D3    ->   PB3
-    - D4    ->   PB4
-    - D5    ->   PB5
-    - D6    ->   PB6
-    - D7    ->   PB7
-    - A     ->   VBUS
-    - K     ->   GND
-- Leds 
-    - red      ->  F1
-    - blue     ->  F2
-    - green    ->  F3
-- Switches
-    - SW1 (Pause button)  -> F4
-    - SW2 (Start button)  -> F0
-    - SW3 (Door switch)   -> A3
 ## Video 
 [here](https://drive.google.com/file/d/165fxDsdFtR-j1i4xtWscL7fSBZ0QnHCk/view?usp=sharing).
 ## Zip file 
