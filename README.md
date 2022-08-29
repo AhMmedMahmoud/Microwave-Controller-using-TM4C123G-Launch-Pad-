@@ -1,6 +1,6 @@
 # Microwave-Oven-Controller-Project
 ## Aim
-This project simulates the embedded controller in a microwave oven.
+simulate the embedded controller in a microwave oven.
 ## Procedure Details:
  While not cooking (not at any mode), message is shown on LCD "select a choice" 
 - If A (for popcorn) is pushed on the keypad, the LCD should show "Popcorn" for two seconds  and then start cooking for 1 minute while the remaining cook time counts down (in seconds) on the LCD.
