@@ -1,4 +1,5 @@
 # Microwave-Oven-Controller-Project
+This project is for Introduction to Embedded Systems Course. it was written in C using Keil 4.
 ## Aim
 simulate the embedded controller in a microwave oven.
 ## Procedure Details:
